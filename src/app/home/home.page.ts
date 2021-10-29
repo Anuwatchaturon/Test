@@ -40,7 +40,7 @@ setname: String;
 db: AngularFireDatabase;
 
   constructor(db: AngularFireDatabase) {
-     this.qes1 =db.list('/task/r').valueChanges().subscribe(res => {
+     this.qes1 =db.list('/light/r').valueChanges().subscribe(res => {
         this.labels1 = res;  
         this.showdata1();
      })
